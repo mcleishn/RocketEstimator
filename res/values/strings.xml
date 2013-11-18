@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rocket Flight Simulator</string>
+    <string name="action_settings">Settings</string>
+    <string name="disclaimer">This app is still in development and has had little to no testing. Please report any bugs, errors, or incorrect results to nathan.mcleish@gmail.com\n\n.This app uses a second order Runge-Kutta integration method to solve the equations of motion using the thrust curve data provided for the available motors.\n\n Due to some assumptions and a lack of real-world data (i.e. wind) the values projected by this app are only accurate to within ~15%. As such your rocket most likely will not conform to this projection. The values are simply meant to provide an estimate for your refernece. If you desire more reliable and accurate projections try using RockSim from Apogee Rockets.</string>
+    <string name="button_accept">I understand</string>
+    <string name="title_activity_app">Rocket Specs</string>
+    <string name="rocket_mass">Mass</string>
+    <string name="mass">Mass: </string>
+    <string name="rocket_diameter">Diameter</string>
+    <string name="diameter">Diameter: </string>
+    <string name="ground_altitude">Ground Elevation</string>
+    <string name="altitude">Altitude: </string>
+    <string name="manu">Manufacturer</string>
+    <string name="size">Size</string>
+    <string name="motor">Motor</string>
+    <string name="bar">" | "</string>
+    <string name="or">--or--</string>
+    <string name="creat_engine">Create New Engine</string>
+    <string name="button_estimate">Estimate Values</string>
+    <string name="title_activity_display_values">Simulation Results</string>
+    <string name="details">This simulation assumes a drag coefficient of 0.75 and does not account for wind or the change in wind resistance with altitude (future version might).</string>
+    <string name="burn_out_alt_title">Altitude at Burnout (AGL)</string>
+    <string name="burn_out_vel_title">Velocity at Burnout</string>
+    <string name="coast_alt_title">Coast Altitude (ABO)</string>
+    <string name="coast_time_title">Coast Time</string>
+    <string name="apogee_title">Total Altitude (AGL)</string>
+    <string name="title_activity_create_engine">Create New Engine</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Name: </string>
+    <string name="motor_name">Name</string>
+    <string name="diam">Diameter (mm): </string>
+    <string name="length">Length (mm): </string>
+    <string name="motor_length">Length</string>
+    <string name="delays">Delays: </string>
+    <string name="motor_delays">0&#8211;3&#8211;6&#8211;9</string>
+    <string name="propWeight">Propellant (Kg): </string>
+    <string name="motor_propWeight">Propellant Weight</string>
+    <string name="weight">Total (Kg): </string>
+    <string name="motor_weight">Total Weight</string>
+    <string name="manufacturer">Manufacturer: </string>
+    <string name="motor_manu">Manufacturer</string>
+    <string name="time">Time (s)</string>
+    <string name="thrust">Thrust (N)</string>
+    <string name="time_input">Time</string>
+    <string name="thrust_input">Thrust</string>
+    <string name="add_point">Add</string>
+    <string name="delete_point">Delete</string>
+
+</resources>

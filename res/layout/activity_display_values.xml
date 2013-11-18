@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DisplayValuesActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/details" />
+
+        <TextView
+            android:id="@+id/burn_out_alt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details"
+            android:layout_centerHorizontal="true"
+            android:text="@string/burn_out_alt_title"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/burn_out_alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burn_out_alt_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/burn_out_vel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burn_out_alt"
+            android:layout_centerHorizontal="true"
+            android:text="@string/burn_out_vel_title"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/burn_out_vel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burn_out_vel_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/coast_alt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burn_out_vel"
+            android:layout_centerHorizontal="true"
+            android:text="@string/coast_alt_title"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/coast_alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coast_alt_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/coast_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coast_alt"
+            android:layout_centerHorizontal="true"
+            android:text="@string/coast_time_title"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/coast_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coast_time_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/apogee_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coast_time"
+            android:layout_centerHorizontal="true"
+            android:text="@string/apogee_title"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/apogee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/apogee_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="12pt" />
+    </RelativeLayout>
+
+</ScrollView>

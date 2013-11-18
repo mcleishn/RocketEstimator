@@ -1,0 +1,241 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateEngineActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/motor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/motor_name_label"
+            android:ems="10"
+            android:hint="@string/motor_name" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/motor_diameter_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_diameter"
+            android:layout_alignParentLeft="true"
+            android:text="@string/diam"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/motor_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_name"
+            android:layout_alignLeft="@+id/motor_diameter_label"
+            android:text="@string/name"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/motor_delays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/motor_length"
+            android:ems="10"
+            android:hint="@string/motor_delays" />
+
+        <EditText
+            android:id="@+id/motor_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motor_propWeight"
+            android:layout_toRightOf="@+id/motor_weight_label"
+            android:ems="10"
+            android:hint="@string/motor_weight"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/motor_manufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motor_weight"
+            android:layout_toRightOf="@+id/motor_manufacturer_label"
+            android:ems="10"
+            android:hint="@string/motor_manu" />
+
+        <TextView
+            android:id="@+id/motor_length_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_length"
+            android:layout_alignParentLeft="true"
+            android:text="@string/length"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/motor_delays_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_delays"
+            android:layout_alignParentLeft="true"
+            android:text="@string/delays"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/motor_propWeight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_propWeight"
+            android:layout_alignParentLeft="true"
+            android:text="@string/propWeight"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/motor_weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_weight"
+            android:layout_alignParentLeft="true"
+            android:text="@string/weight"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/motor_diameter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motor_name"
+            android:layout_toRightOf="@+id/motor_diameter_label"
+            android:ems="10"
+            android:hint="@string/rocket_diameter"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/motor_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motor_diameter"
+            android:layout_toRightOf="@+id/motor_length_label"
+            android:ems="10"
+            android:hint="@string/motor_length"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/motor_propWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motor_delays"
+            android:layout_toRightOf="@+id/motor_propWeight_label"
+            android:ems="10"
+            android:hint="@string/motor_propWeight"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/motor_manufacturer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/motor_manufacturer"
+            android:layout_alignLeft="@+id/motor_weight_label"
+            android:text="@string/manufacturer"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/time_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/motor_manufacturer_label"
+            android:layout_marginTop="23dp"
+            android:text="@string/time"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/bar_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/time_head"
+            android:layout_alignBottom="@+id/time_head"
+            android:layout_toRightOf="@+id/time_head"
+            android:text="@string/bar"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/thrust_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bar_head"
+            android:layout_alignBottom="@+id/bar_head"
+            android:layout_toRightOf="@+id/bar_head"
+            android:text="@string/thrust"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time_head"
+            android:layout_alignRight="@+id/thrust_head"
+            android:layout_below="@+id/time_head"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/time_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/time_head"
+            android:layout_below="@+id/data"
+            android:ems="10"
+            android:hint="@string/time_input"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/thrust_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/time_input"
+            android:layout_alignBottom="@+id/time_input"
+            android:layout_alignLeft="@+id/thrust_head"
+            android:layout_alignRight="@+id/data"
+            android:ems="10"
+            android:hint="@string/thrust_input"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/thrust_input"
+            android:layout_alignBottom="@+id/thrust_input"
+            android:layout_toRightOf="@+id/data"
+            android:onClick="addPoint"
+            android:text="@string/add_point" />
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_button"
+            android:onClick="createEngine"
+            android:text="@string/creat_engine" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/thrust_input"
+            android:layout_alignLeft="@+id/add_button"
+            android:onClick="deletePoint"
+            android:text="@string/delete_point" />
+    </RelativeLayout>
+
+</ScrollView>
